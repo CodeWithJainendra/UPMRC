@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#075e54"
+    tools:context="com.shivam.metroproject.NearestMetro">
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="20dp"
+        android:text="IIT Kanpur"
+        android:textColor="@color/white"
+        android:id="@+id/iit"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/iit"
+        android:id="@+id/kalyanpur"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:text="Kalyanpur"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/kalyanpur"
+        android:id="@+id/spm"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:text="SPM Hospital"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/spm"
+        android:id="@+id/university"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:text="CSJM University"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/university"
+        android:id="@+id/gurudev"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:text="Gurudev Chauraha"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/gurudev"
+        android:id="@+id/geetanagar"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:text="Geeta Nagar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/geetanagar"
+        android:id="@+id/rawatpur"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:text="Rawatpur"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/rawatpur"
+        android:id="@+id/llr"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:text="LLR Hospital"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+    <TextView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/llr"
+        android:id="@+id/motijheel"
+        android:layout_marginTop="5dp"
+        android:layout_height="20dp"
+        android:text="Moti Jheel"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="20dp"
+        android:background="@drawable/edittext_tb"/>
+
+    <metroproject.google.android.ads.nativetemplates.TemplateView
+        android:id="@+id/nativeads"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/motijheel"
+        app:gnt_template_type="@layout/gnt_small_template_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/buttonback"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/archivo_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

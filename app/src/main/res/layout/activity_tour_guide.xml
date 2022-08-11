@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.shivam.metroproject.TourGuide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            >
+<ImageView
+    android:layout_width="140dp"
+    android:layout_height="100dp"
+    android:padding="10dp"
+    android:id="@+id/blueworld"
+    android:src="@drawable/blueworld"
+    android:background="@drawable/edittext_tb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BlueWorld Theme Park"
+                android:layout_below="@id/blueworld"
+                android:id="@+id/blueworldtext"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/archivo"
+                android:textSize="12dp"/>
+
+
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/blueworld"
+                android:layout_marginStart="30dp"
+                android:id="@+id/greenpark"
+                android:padding="10dp"
+                android:src="@drawable/greenpark"
+                android:background="@drawable/edittext_tb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Park Stadium"
+                android:layout_alignEnd="@id/greenpark"
+                android:layout_below="@id/greenpark"
+                android:id="@+id/greenparktext"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/archivo"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:id="@+id/nanrao"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/blueworldtext"
+                android:src="@drawable/nanarao"
+                android:background="@drawable/edittext_tb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nana Rao Park"
+                android:layout_below="@id/nanrao"
+                android:id="@+id/nanraotext"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/archivo"
+                android:textSize="12dp"/>
+
+
+
+
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="100dp"
+                android:layout_toRightOf="@id/blueworld"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/greenparktext"
+                android:id="@+id/mahatma"
+                android:padding="10dp"
+                android:src="@drawable/mahatma"
+                android:background="@drawable/edittext_tb"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mahatma Gandhi Park "
+                android:layout_alignEnd="@id/mahatma"
+                android:layout_below="@id/mahatma"
+                android:id="@+id/mahatmatext"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/archivo"
+                android:textSize="12dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View More"
+                android:id="@+id/viewmore"
+                android:gravity="center"
+                android:layout_margin="100dp"
+                android:layout_below="@id/mahatmatext"/>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewmore"
+                android:id="@+id/buttonback"
+                android:layout_marginStart="100dp"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="@font/archivo_black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"/>
+
+
+
+
+
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adVieww"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3647835717520066/6648448419">
+            </com.google.android.gms.ads.AdView>
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

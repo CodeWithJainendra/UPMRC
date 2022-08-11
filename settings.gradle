@@ -1,0 +1,3 @@
+rootProject.name = "UPMRC"
+include ':app'
+include ':nativetemplates'

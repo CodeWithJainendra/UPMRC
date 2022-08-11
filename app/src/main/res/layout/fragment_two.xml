@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.shivam.metroproject.fragment.TwoFragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/loginss"
+        android:src="@drawable/loginss"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/relativee">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagebelow">
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imagebelow"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/archivo_black"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="13dp"
+                    android:text="Name"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@id/loginss"
+                    app:layout_constraintBottom_toTopOf="@id/email"
+                    android:textStyle="bold"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:autofillHints="emailAddress"
+                    android:background="@drawable/edittext_tb"
+                    android:hint="Full Name"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lighlack"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@id/email"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+                <TextView
+                    android:id="@+id/Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/archivo_black"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="13dp"
+                    android:text="Mobile"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@id/email"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/Mobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/edittext_tb"
+                    android:hint="10-digit mobile number"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lighlack"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@id/Mobile"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <TextView
+                    android:id="@+id/Passwordd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/archivo_black"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="13dp"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@id/Mobileno"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/edittext_tb"
+                    android:hint="your email address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lighlack"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@id/Passwordd"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/archivo_black"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="13dp"
+                    android:text="DOB"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@id/email"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+                <EditText
+                    android:id="@+id/dobb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/edittext_tb"
+                    android:hint="Select Date"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lighlack"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    app:layout_constraintTop_toBottomOf="@id/dob"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <TextView
+                    android:id="@+id/Passworddd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/archivo_black"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="13dp"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@id/email"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/enterpasword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/edittext_tb"
+                    android:hint="Enter your Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lighlack"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@id/dob"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+
+                <TextView
+                    android:id="@+id/Passwordddd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="@font/archivo_black"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="13dp"
+                    android:text="Re-Enter Password"
+                    android:textColor="@color/black"
+                    android:textSize="13dp"
+                    app:layout_constraintTop_toBottomOf="@id/Passwordddd"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+                <EditText
+                    android:id="@+id/reenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/edittext_tb"
+                    android:hint="Re-Enter your Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/lighlack"
+                    android:textSize="14sp"
+                    android:visibility="visible"
+                    app:layout_constraintTop_toBottomOf="@id/dob"
+                    app:layout_constraintVertical_bias="0.344"
+                    app:layout_constraintWidth_percent=".8" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressbar"
+                    android:gravity="center">
+
+
+                    <Button
+                        android:id="@+id/skippedd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="30dp"
+                        android:layout_marginBottom="50dp"
+                        android:backgroundTint="@color/green"
+                        android:foregroundGravity="center_horizontal"
+                        android:gravity="center"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:paddingRight="20dp"
+                        android:text="Register"
+                        android:textColor="@color/white"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:verticalScrollbarPosition="left"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="parent" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

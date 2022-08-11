@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.shivam.metroproject">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MetroProject"
+        tools:targetApi="31">
+        <activity
+            android:name="com.shivam.metroproject.TourGuide"
+            android:exported="false" />
+        <activity
+            android:name="com.shivam.metroproject.FareCalculation"
+            android:exported="false" />
+        <activity
+            android:name="com.shivam.metroproject.FirstLastMetroTime"
+            android:exported="false" />
+        <activity
+            android:name="com.shivam.metroproject.NearestMetro"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name="com.shivam.metroproject.SearchStation"
+            android:exported="false"
+            android:label="@string/title_activity_search_station" />
+        <activity
+            android:name="com.shivam.metroproject.InsideContent"
+            android:exported="false" />
+        <activity
+            android:name="com.shivam.metroproject.MainDisplay"
+            android:exported="false" />
+        <activity
+            android:name="com.shivam.metroproject.MainContent"
+            android:exported="false" />
+        <activity
+            android:name="com.shivam.metroproject.EnterringOTP"
+            android:exported="false" />
+        <activity
+            android:name="com.shivam.metroproject.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.shivam.metroproject.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3647835717520066~3407622690" />
+    </application>
+
+</manifest>

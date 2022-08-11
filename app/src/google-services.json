@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1066149117433",
+    "firebase_url": "https://upmrcproject-default-rtdb.firebaseio.com",
+    "project_id": "upmrcproject",
+    "storage_bucket": "upmrcproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066149117433:android:775856ae986f36712a1128",
+        "android_client_info": {
+          "package_name": "com.shivam.metroproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066149117433-pf0o5sgji0taatvp4eqe37bpht6chb67.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shivam.metroproject",
+            "certificate_hash": "565d1960f203448c52670e4d6e62cb9069e5920f"
+          }
+        },
+        {
+          "client_id": "1066149117433-2tm8hd930039nkah9pfgrp5m03212h0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA624s49DD03VJUwc-g9brp39imSn6ohag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066149117433-2tm8hd930039nkah9pfgrp5m03212h0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

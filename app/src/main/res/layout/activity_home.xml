@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.shivam.metroproject.HomeActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/loginss"
+        android:src="@drawable/loginss"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/relativee">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagebelow">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/imagebelow"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </RelativeLayout>
+
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/maincontentt"
+                    app:lottie_rawRes="@raw/lottie"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"/>
+
+                <LinearLayout
+                    android:id="@+id/linearr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp"
+                    android:gravity="clip_horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/forgetpass"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/archivo_black"
+                            android:gravity="left"
+                            android:text="Plan Your Journey"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:textStyle="normal"
+                            android:verticalScrollbarPosition="left"
+                            app:layout_constraintTop_toBottomOf="parent" />
+
+                        <Button
+                            android:id="@+id/nextcontent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:backgroundTint="@color/black"
+                            android:gravity="center"
+                            android:text="Service Alert  >"
+                            android:textColor="@color/white"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            android:verticalScrollbarPosition="left"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toBottomOf="parent" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearrr"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:background="#075e54"
+                    app:layout_constraintTop_toBottomOf="@id/linearrr">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:id="@+id/imagebutt"
+                            android:layout_marginTop="17dp"
+                            android:backgroundTint="@color/white"
+                            android:drawableBottom="@drawable/dropdown" />
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@id/imagebutt"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:backgroundTintMode="screen"
+                            android:background="@android:drawable/btn_dropdown"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:id="@+id/imagebuttt"
+                            android:layout_marginTop="15dp"
+                            android:backgroundTint="@color/red"
+                            android:drawableBottom="@drawable/dropdown" />
+
+
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_toRightOf="@id/imagebuttt"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="30dp"
+                            android:gravity="center"
+                            android:backgroundTintMode="screen"
+                            android:background="@android:drawable/btn_dropdown"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linerr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="clip_horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/forgetpass">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <EditText
+                                android:id="@+id/datepicker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="30dp"
+                                android:backgroundTint="@color/white"
+                                android:autofillHints="password"
+                                android:background="@drawable/edittext_tb"
+                                android:clickable="false"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="Select Date"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="10dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/lighlack"
+                                android:textSize="12sp"
+                                android:visibility="visible" />
+
+
+                            <EditText
+                                android:id="@+id/timepicker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginRight="30dp"
+                                android:autofillHints="password"
+                                android:backgroundTint="@color/white"
+                                android:background="@drawable/edittext_tb"
+                                android:clickable="false"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="Select Time"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="10dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/lighlack"
+                                android:textSize="12sp"
+                                android:visibility="visible" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:backgroundTint="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:background="@drawable/edittext_tb"
+                        android:gravity="clip_horizontal"
+                        app:layout_constraintTop_toBottomOf="@id/forgetpass">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginEnd="8dp"
+                                android:paddingStart="8dp"
+                                android:paddingBottom="20dp"
+                                android:paddingEnd="8dp"
+                                android:text="Advance Filters"
+                                android:textColor="@color/lighlack"
+                                android:textSize="10dp" />
+
+
+                            <RadioButton
+                                android:id="@+id/shortestroute"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentBottom="true"
+                                android:autofillHints="password"
+                                android:clickable="true"
+                                android:cursorVisible="true"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="Shortest \n Route"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="10dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/lighlack"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+
+                            <RadioButton
+                                android:id="@+id/Advancefilter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:autofillHints="password"
+                                android:clickable="true"
+                                android:cursorVisible="true"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="Minimum \n Interchange"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="10dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="10dp"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/lighlack"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/fairshow"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center_vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <Button
+                                android:id="@+id/showfair"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="15dp"
+                                android:backgroundTint="@color/purple_700"
+                                android:fontFamily="@font/archivo_black"
+                                android:foregroundGravity="center_horizontal"
+                                android:gravity="center"
+                                android:paddingStart="10dp"
+                                android:paddingRight="10dp"
+                                android:text="@string/show_route_fare"
+                                android:textColor="@color/white"
+                                android:textSize="10dp" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/progressbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/showroute"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imageone"
+                            android:layout_width="120dp"
+                            android:layout_height="90dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/imageback"
+                            android:src="@drawable/traineeee" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imageone"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="60dp"
+                            android:layout_toEndOf="@id/imageone"
+                            android:gravity="center"
+                            android:text="Search Station"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                        <ImageButton
+                            android:id="@+id/imagetwo"
+                            android:layout_width="120dp"
+                            android:layout_height="90dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/imageback"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="22dp"
+                            android:src="@drawable/trainnnn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagetwo"
+                            android:layout_alignParentEnd="true"
+
+                            android:layout_toEndOf="@id/imageone"
+                            android:gravity="end"
+                            android:layout_marginEnd="30dp"
+                            android:text="Nearest Metro Station"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/imagethree"
+                            android:layout_width="120dp"
+                            android:layout_height="90dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/imageback"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="22dp"
+                            android:src="@drawable/recharg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagethree"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="50dp"
+
+                            android:layout_toEndOf="@id/imagefour"
+                            android:gravity="end"
+                            android:text="Online Recharge"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:id="@+id/imagefour"
+                            android:layout_width="120dp"
+                            android:layout_height="90dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/imageback"
+                            android:src="@drawable/clock" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/imagefour"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="40dp"
+                            android:layout_toEndOf="@id/imagefour"
+                            android:gravity="center"
+                            android:text="@string/first_last_metro_time"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/grey"
+                        android:background="@drawable/imageback"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginTop="30dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="30dp"
+                            android:id="@+id/stationalert"
+                            android:src="@drawable/stationalertt"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Station Alert"
+                            android:layout_below="@id/stationalert"
+                            android:textSize="12sp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="110dp"
+                            android:textStyle="bold"
+                            />
+
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linerrr"
+                        android:orientation="vertical"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginBottom="30dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/farecal"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="10dp"
+                                android:backgroundTint="@color/grey"
+                                android:clickable="true"
+                                android:src="?android:attr/actionModeFindDrawable"
+                                android:visibility="visible"
+                                app:borderWidth="1dp"
+                                app:fabSize="mini" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:text="Fare Calculator"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold" />
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/farecall"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="30dp"
+                                android:backgroundTint="@color/grey"
+                                android:clickable="true"
+                                android:src="@android:drawable/ic_menu_myplaces"
+                                android:visibility="visible"
+                                app:borderWidth="1dp"
+                                app:fabSize="mini" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tour Guide"
+                                android:layout_marginTop="50dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"/>
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/farecalll"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp"
+                                android:backgroundTint="@color/grey"
+                                android:clickable="true"
+                                android:src="@android:drawable/ic_dialog_info"
+                                android:visibility="visible"
+                                app:borderWidth="1dp"
+                                app:fabSize="mini" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Other Info"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="150dp"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"/>
+
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/farecallll"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="100dp"
+                                android:layout_marginEnd="30dp"
+                                android:backgroundTint="@color/grey"
+                                android:clickable="true"
+                                android:src="@android:drawable/ic_menu_today"
+                                android:visibility="visible"
+                                app:borderWidth="1dp"
+                                app:fabSize="mini" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lost_found"
+                                android:layout_marginTop="150dp"
+                                android:layout_marginEnd="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:textColor="@color/black"
+                                android:textSize="11sp"
+                                android:textStyle="bold"/>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/backbox"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Important Information"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="20dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quick Contact:"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/archivo_black"
+                            android:textColor="@color/red"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginStart="30dp"
+                            />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/white">
+
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/helpline"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:backgroundTint="@color/grey"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:clickable="true"
+                                android:src="@android:drawable/ic_menu_call"
+                                android:visibility="visible"
+                                app:borderWidth="1dp"
+                                app:fabSize="mini" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="14dp"
+                                android:layout_alignParentStart="true"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="12dp"
+                                android:text="KMRC Helpline No."
+                                android:layout_toEndOf="@id/helpline"
+                                android:layout_marginStart="66dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0512-2246200"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginStart="70dp"/>
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/white"
+                            >
+                            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                android:id="@+id/CISF"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:backgroundTint="@color/grey"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:clickable="true"
+                                android:src="@android:drawable/ic_menu_call"
+                                android:visibility="visible"
+                                app:borderWidth="1dp"
+                                app:fabSize="mini" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="14dp"
+                                android:layout_alignParentStart="true"
+                                android:gravity="center_horizontal"
+                                android:textStyle="bold"
+                                android:textSize="12dp"
+                                android:text="CISF Helpline No."
+                                android:layout_toEndOf="@id/CISF"
+                                android:layout_marginStart="66dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="155655"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginStart="70dp"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="15dp"
+                            android:background="@color/white"
+                            >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Disclaimer* : The Information provided in KMRC's Website i.e.. train timings, runtime, station facilites etc.. is indicative and subject to change. Commuters are advised to plan their journey in advance as actual journey time may vary as per the prevailing conditions!...KMRC will not be liable for any direct or indirect loss (of any nature whatsover) arising from the material contained in this website."
+                                android:textColor="@color/black"
+                                android:layout_marginEnd="15dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="30dp"
+                                android:textSize="10dp"
+                                android:textStyle="normal"/>
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
